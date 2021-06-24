@@ -8,7 +8,7 @@
 /* Set-up */
 
 html {
-    visibility: hidden; /* Hack to avoid FOUC */
+
     background-color: #FFF;
 }
 
@@ -55,57 +55,10 @@ a:active {
     color: #999;
 }
 
-/* Forms */
-
-input:not([type="checkbox"]):not([type="radio"]),
-textarea {
-    margin: 0;
-    outline: none;
-    box-sizing: border-box;
-    padding: 8px;
-    font-family: sans-serif;
-    font-size: 14px;
-    border: none;
-    color: #000;
-    border-radius: 0;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    outline: none;
-    vertical-align: text-top;
-}
-
-select {
-    font-family: sans-serif;
-    font-size: 16px;
-    outline: none;
-    height: 32px;
-    border: none;
-    color: #000;
-}
-
-button {
-    margin: 0;
-}
-
-::placeholder {
-    color: #999;
-}
-
-.field-error,
-.field-error::placeholder {
-    color: #F00 !important;
-}
-
 /* Animation */
 
 .fade-in-05 {
     animation: fadeIn linear 0.5s 0.25s forwards;
-}
-
-.rotate-1 {
-    animation: rotating linear 1s infinite;
 }
 
 @keyframes fadeIn {
@@ -115,16 +68,6 @@ button {
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes rotating {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }
 
@@ -172,8 +115,8 @@ h4 a {
 }
 
 footer a {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 footer img {
